@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Hello World DApp</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+ <h1>A Simple Hello World Tickets Resto Application</h1>
+ <div class="table-responsive">
+    <table class="table table-bordered">
+     <thead>
+      <tr>
+       <th>Tickets</th>
+       <th>Consommations</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>Ticket bleu</td>
+       <td id="ticket-blanc"></td>
+      </tr>
+      <tr>
+       <td>Ticket blanc</td>
+       <td id="ticket-bleu"></td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+ <div class="table-responsive">
+    <table class="table table-bordered">
+     <thead>
+      <tr>
+       <th>Adresse client</th>
+       <th>Solde ETH</th>
+       <th>Solde Ticket</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td id="adress0"></td>
+        <td id="soldeth0"></td>
+        <td id="soldticket0"></td>
+      </tr>
+      <tr>
+       <td id="adress1"></td>
+       <td id="soldeth1"></td>
+       <td id="soldticket1"></td>
+      </tr>
+      <tr>
+        <td id="adress2"></td>
+        <td id="soldeth2"></td>
+        <td id="soldticket2"></td>
+       </tr>
+       <tr>
+        <td id="adress3"></td>
+        <td id="soldeth3"></td>
+        <td id="soldticket3"></td>
+       </tr>
+       <tr>
+        <td id="adress4"></td>
+        <td id="soldeth4"></td>
+        <td id="soldticket4"></td>
+       </tr>
+       <tr>
+        <td id="adress5"></td>
+        <td id="soldeth5"></td>
+        <td id="soldticket5"></td>
+       </tr>
+
+       <tr>
+        <td id="adress6"></td>
+        <td id="soldeth6"></td>
+        <td id="soldticket6"></td>
+       </tr>
+       <tr>
+         <td id="adress7"></td>
+         <td id="soldeth7"></td>
+         <td id="soldticket7"></td>
+        </tr>
+        <tr>
+         <td id="adress8"></td>
+         <td id="soldeth8"></td>
+         <td id="soldticket8"></td>
+        </tr>
+        <tr>
+         <td id="adress9"></td>
+         <td id="soldeth9"></td>
+         <td id="soldticket9"></td>
+        </tr>
+        
+
+     </tbody>
+    </table>
+   </div>
+   <table class="no">
+       <tr>
+           <td width="200px">
+                <label for="nbrethtobuy">Adresse Acheteur:</label>
+           </td>
+           <td width="200px">
+                <label for="adressBuyer">Nombre ETH:</label>
+           </td>
+       </tr>
+       <tr>
+           <td>
+                <input type="text" id="adressBuyer" />
+           </td>
+           <td>
+                <input type="text" id="nbrethtobuy" />
+           </td>
+           <td width="200px">
+                <a href="#" onclick="BuyTokens()" class="btn btn-primary">Buy Tickets</a>
+           </td>
+       </tr>
+       <tr><td>...</td></tr>
+       <tr>
+           <td>
+                <label for="adressconsumer">Adresse consommateur:</label>
+           </td>
+           <td>
+                <label for="tickettoconsum">Type ticket:</label>
+           </td>
+           <td>
+                <label for="nbrticketstoconsum">Nombre Ticket:</label>
+           </td>
+      </tr>
+    <tr>
+        <td>
+            <input type="text" id="adressconsumer" />
+        </td>
+        <td>
+            <input type="text" id="tickettoconsum" />
+        </td>
+        <td>
+            <input type="number" id="nbrticketstoconsum" />
+        </td>
+        <td>
+            <a href="#" onclick="consumTikets()" class="btn btn-primary">Consum Tickets</a>
+        </td>
+    </tr>
+    <tr><td>...</td></tr>
+    <tr>
+        <td>
+             <label for="adresssender">Adresse Envoyeur:</label>
+        </td>
+        <td>
+             <label for="adressreceiver">Adresse Receveur:</label>
+        </td>
+        <td>
+             <label for="nbrethtotransfert">Nombre Ticket:</label>
+        </td>
+   </tr>
+
+    <tr>
+        <td>
+            <input type="text" id="adresssender" />
+        </td>
+        <td>
+            <input type="text" id="adressreceiver" />
+        </td>
+        <td>
+            <input type="text" id="nbrethtotransfert" />
+        </td>
+        <td>
+            <a href="#" onclick="transferTokens()" class="btn btn-primary">Transfert Tickets</a>
+        </td>
+    </tr>
+   </table>
+  
+<br>
+ 
+ 
+ 
+ 
+ 
+</body>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
